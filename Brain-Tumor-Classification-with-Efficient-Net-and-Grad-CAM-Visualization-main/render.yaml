@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: brain-tumor-api
+    env: python
+    rootDir: .
+    buildCommand: pip install -r requirements.txt
+    startCommand: python backend/run_backend.py
+    healthCheckPath: /health
+    envVars:
+      - key: BACKEND_PORT
+        value: 10000
+      - key: BRAIN_TUMOR_MODEL_PATH
+        value: models/model.keras
+      - key: FRONTEND_ORIGINS
+        sync: false

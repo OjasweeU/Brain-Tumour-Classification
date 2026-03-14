@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local environment
+.env
+.venv/
+venv/
+
+# Generated training artifacts
+artifacts/
+external/
+
+# Streamlit
+.streamlit/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
